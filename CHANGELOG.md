@@ -2,6 +2,17 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## 0.2.0 - 2021-07-15
+
+
+### Features
+
+[de4d5c](https://github.com/pjvds/zsh-fzf-up/commit/de4d5c6e7c3d10fe67bdca8588cfb8fdeaa82a4d) - allow bindkey override - [pjvds](https://github.com/pjvds)
+
+[3abf46](https://github.com/pjvds/zsh-fzf-up/commit/3abf4643a7bfe17c333263e913846fc96629a72a) - add multi platform support - [pjvds](https://github.com/pjvds)
+
+
+- - -
 ## 0.1.0 - 2021-07-15
 
 
