@@ -26,13 +26,18 @@ function fzf-up() {
 function _fzf-up::list-parents() {
   # get the current directory
   local current="$(pwd)"
+  local parent="$(dirname "$current")"
 
   # loop until we hit the root directory
-  while [[ "$current" != "/" ]]; do
+  while [[ "$current" != "$parent" ]]; do
     echo "$current"
 
-    current=$(dirname "$current")
+    current="$parent"
+    parent=$(dirname "$current")
   done
+
+  # print root dir name
+  echo "$(dirname $current)"
 }
 
 function _fzf-up::init() {
