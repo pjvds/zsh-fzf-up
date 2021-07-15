@@ -1,8 +1,11 @@
 function _fzf-up::widget() {
   setopt localoptions noglobsubst noposixbuiltins pipefail no_aliases 2> /dev/null
 
-  local selected 
-  selected=($(_fzf-up::list-parents | fzf))
+  # fastest way to check if a command exists (50% faster compared to type, hash, which, etc.)
+  if (( ! $+commands[fzf] )); then
+    echo "[fzf-up] required fzf command not found"
+    return 0
+  fi
 
   local ret=$?
   # only change directory when something is selected
