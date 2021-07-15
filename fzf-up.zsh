@@ -7,12 +7,15 @@ function fzf-up() {
     return 0
   fi
 
+  # select a parent directory
+  local selected=($(_fzf-up::list-parents | fzf))
+
   local ret=$?
   # only change directory when something is selected
   if [ -n "$selected" ]; then
     cd "$selected"
   fi
-  
+
   # guard agains zle not loaded
   zle && { zle reset-prompt; zle -R }
 
