@@ -1,5 +1,5 @@
-function _fzf-up::widget() {
-  setopt localoptions noglobsubst noposixbuiltins pipefail no_aliases 2> /dev/null
+function fzf-up() {
+  #setopt localoptions noglobsubst noposixbuiltins pipefail no_aliases 2> /dev/null
 
   # fastest way to check if a command exists (50% faster compared to type, hash, which, etc.)
   if (( ! $+commands[fzf] )); then
@@ -12,7 +12,7 @@ function _fzf-up::widget() {
   if [ -n "$selected" ]; then
     cd "$selected"
   fi
-
+  
   # guard agains zle not loaded
   zle && { zle reset-prompt; zle -R }
 
@@ -33,6 +33,6 @@ function _fzf-up::list-parents() {
 }
 
 function _fzf-up::init() {
-  zle     -N   _fzf-up::widget
-  bindkey '^U' _fzf-up::widget
+  zle     -N   fzf-up
+  bindkey '^U' fzf-up
 }
