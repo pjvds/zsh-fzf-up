@@ -40,7 +40,12 @@ function _fzf-up::list-parents() {
   echo "$(dirname $current)"
 }
 
+function _fzf-up::bindkey() {
+  local default_bindkey='^[u'
+  echo "${FZF_UP_BINDKEY:-$default_bindkey}"
+}
+
 function _fzf-up::init() {
   zle     -N   fzf-up
-  bindkey '^U' fzf-up
+  bindkey "$(_fzf-up::bindkey)" fzf-up
 }
