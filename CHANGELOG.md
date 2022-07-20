@@ -2,6 +2,16 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## [0.3.0](https://github.com/pjvds/zsh-fzf-up/compare/0.2.0..0.3.0) - 2022-07-20
+#### Documentation
+- add README.md - ([2f1bddc](https://github.com/pjvds/zsh-fzf-up/commit/2f1bddc68cc07585ec19c300e7cb6333cd5c54bd)) - [@pjvds](https://github.com/pjvds)
+#### Features
+- add ability to also change directory downwards - ([ad8acab](https://github.com/pjvds/zsh-fzf-up/commit/ad8acab1c2e0a61509cacef49df61eb3d4e03c96)) - [@pjvds](https://github.com/pjvds)
+#### Miscellaneous Chores
+- upgrade cocogitto config to new structure - ([c3c6183](https://github.com/pjvds/zsh-fzf-up/commit/c3c6183abc3e4a144c74dad9a7d455359e81edd2)) - [@pjvds](https://github.com/pjvds)
+
+- - -
+
 ## 0.2.0 - 2021-07-15
 
 
