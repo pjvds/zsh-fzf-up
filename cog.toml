@@ -1,9 +1,9 @@
-github = "https://github.com/pjvds/zsh-fzf-up"
-
-changelog_path = "CHANGELOG.md"
-pre_bump_hooks = []
-post_bump_hooks = []
+[changelog]
+path = "CHANGELOG.md"
+template = "remote"
+remote = "github.com"
+repository = "zsh-fzf-up"
+owner = "pjvds"
 authors = [
     { signature = "Pieter Joost van de Sande", username = "pjvds" }
 ]
-
