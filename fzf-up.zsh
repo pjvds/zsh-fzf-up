@@ -29,7 +29,6 @@ function fzf-down() {
 
   # respect the exit code of the fzf command execution
   return $ret
-
 }
 
 function fzf-up() {
@@ -78,5 +77,5 @@ function _fzf-up::init() {
   zle     -N   fzf-up
   zle     -N   fzf-down
   bindkey "^u" fzf-up
-  bindkey "^d" fzf-up
+  bindkey "^d" fzf-down
 }
