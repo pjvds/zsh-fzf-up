@@ -2,6 +2,14 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## [0.4.0](https://github.com/pjvds/zsh-fzf-up/compare/0.3.0..0.4.0) - 2023-09-11
+#### Bug Fixes
+- fix initial keybinding for jumping down - ([4dcacf9](https://github.com/pjvds/zsh-fzf-up/commit/4dcacf9657228a14a9fe1b81db21ce1de714f60e)) - [@pjvds](https://github.com/pjvds)
+#### Features
+- change default bindings to CTRL+[ and CTRL+] - ([91835e1](https://github.com/pjvds/zsh-fzf-up/commit/91835e1791765e28f689a708b490057ad97c0d6c)) - [@pjvds](https://github.com/pjvds)
+
+- - -
+
 ## [0.3.0](https://github.com/pjvds/zsh-fzf-up/compare/0.2.0..0.3.0) - 2022-07-20
 #### Documentation
 - add README.md - ([2f1bddc](https://github.com/pjvds/zsh-fzf-up/commit/2f1bddc68cc07585ec19c300e7cb6333cd5c54bd)) - [@pjvds](https://github.com/pjvds)
