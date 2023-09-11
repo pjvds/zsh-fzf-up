@@ -8,7 +8,7 @@ fzf-up is a faster way to navigate your parent directory tree. It works by listi
 
 # USAGE
 
-By default fzf-up binds to ALT+U and you can use this key to trigger the fzf-up widget.
+By default fzf-up binds to CTRL+[ to change directory to a parent location and CTRL+] for a child location.
 
 # INSTALLATION
 
@@ -38,7 +38,6 @@ zgen load "pjvds/zsh-fzf-up"
 ```
 
 ## Oh My Zsh
-
 
 Clone `zsh-fzf-up` into your custom plugins directory
 

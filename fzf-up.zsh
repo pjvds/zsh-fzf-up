@@ -8,7 +8,7 @@ function fzf-down() {
   fi
 
   # select a parent directory
-  local selected=($(fzf))
+  local selected=($(find . | fzf))
   local ret=$?
 
   # only change directory when something is selected
@@ -76,6 +76,6 @@ function _fzf-up::list-parents() {
 function _fzf-up::init() {
   zle     -N   fzf-up
   zle     -N   fzf-down
-  bindkey "^u" fzf-up
-  bindkey "^d" fzf-down
+  bindkey "^[" fzf-up
+  bindkey "^]" fzf-down
 }
