@@ -76,6 +76,6 @@ function _fzf-up::list-parents() {
 function _fzf-up::init() {
   zle     -N    fzf-up
   zle     -N    fzf-down
-  bindkey "^[[" fzf-up   # alt+[
-  bindkey "^[]" fzf-down # alt+]
+  bindkey "${FZF_UP_KEY:-^[[}" fzf-up   # alt+[
+  bindkey "${FZF_DOWN_KEY:-^[]}" fzf-down # alt+]
 }
